@@ -3,6 +3,8 @@ package Main;
 import Palavras.*;
 import Arvore.*;
 
+import java.util.Scanner;
+
 /*
         *cada palavra possui linha e coluna
         * char 1byte
@@ -13,6 +15,18 @@ import Arvore.*;
 
 public class Main {
     public static void main(String[]args){
+
+        Scanner sc = new Scanner(System.in);
+
+        Obj_Palavras o_procurado;
+        String p_procurada;
+
+        System.out.println("Digite a palavra a ser procurada: ");
+        p_procurada = sc.next();
+        o_procurado = new Obj_Palavras(p_procurada, 0, 0);
+
+
+
         //testar o extrai palavras
         try{
             ExtraiPalavra lista_palavras = new ExtraiPalavra("src/Arquivos/delim.txt", "src/Arquivos/teste.txt");
@@ -39,7 +53,7 @@ public class Main {
         System.out.println(TransformaBits.charPbits('a'));
 
         System.out.println(TransformaBits.stingPbits("batata"));
-
+        System.out.println(TransformaBits.stingPbits("b"));
 
         System.out.println("ok");
 

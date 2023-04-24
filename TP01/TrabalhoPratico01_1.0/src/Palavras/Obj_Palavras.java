@@ -13,4 +13,19 @@ public class Obj_Palavras {
         chave =  TransformaBits.stingPbits(palavra);
     }
 
+    public int getLinha() {
+        return linha;
+    }
+
+    public int getColuna() {
+        return coluna;
+    }
+
+    public String getChave() {
+        return chave;
+    }
+
+    public String getPalavra() {
+        return palavra;
+    }
 }
