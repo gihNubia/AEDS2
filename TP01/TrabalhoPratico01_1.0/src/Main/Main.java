@@ -23,7 +23,10 @@ public class Main {
 
         System.out.println("Digite a palavra a ser procurada: ");
         p_procurada = sc.next();
-        o_procurado = new Obj_Palavras(p_procurada, 0, 0);
+
+        o_procurado = new Obj_Palavras(p_procurada);
+        //o_procurado.addPosicao(2, 4);
+        System.out.println(o_procurado.getRepeticoes());
 
 
 
@@ -52,8 +55,8 @@ public class Main {
         System.out.println(TransformaBits.charPbits('b'));
         System.out.println(TransformaBits.charPbits('a'));
 
-        System.out.println(TransformaBits.stingPbits("batata"));
-        System.out.println(TransformaBits.stingPbits("b"));
+        System.out.println(TransformaBits.stringPbits("batata"));
+        System.out.println(TransformaBits.stringPbits("b"));
 
         System.out.println("ok");
 

@@ -14,10 +14,10 @@ public  class TransformaBits {
         return i;
     }
 
-    public static String stingPbits(String s){
+    public static String stringPbits(String s){
         i = new String();
 
-        for(int j = 0; j < s.length() ; j++){
+        for(int j = 0; j < s.length(); j++){
             i = String.join("",i, charPbits(s.charAt(j)));
         }
         if(i.length() < 16*8){
