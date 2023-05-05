@@ -10,7 +10,6 @@ public class ArvorePatricia {
         PatNo esq, dir;
     }
 
-    // Nos Externos armazenam chave e uma lista com as posicoes
     private static class PatNoExt extends PatNo {
         char[] chave;
         ArrayList<Posicao> posicoes;
@@ -23,7 +22,6 @@ public class ArvorePatricia {
     private PatNo raiz;
     private int nbitsChave = 16*8;
 
-    // Retorna o i-esimo bit da string
     public int bit(int i, char[] k) {
         int iChar = i/8;
         int iBit = i%8;
@@ -115,9 +113,6 @@ public class ArvorePatricia {
             return aux;
         }
     }
-
-    // Retorna um vetor de caracteres com 16 posicoes
-    // Se palavra fornecida for menor que 16, adiciona espacos em branco
     private char[] padronizaChar(char[] palavra){ //*
         char[] k = new char[16];
 
@@ -130,12 +125,12 @@ public class ArvorePatricia {
     }
 
     public void insere(char[] palavra, Posicao pos) {
-        char[] k = this.padronizaChar(palavra); //**
+        char[] k = this.padronizaChar(palavra);
         this.raiz = this.insere(k, pos, this.raiz);
     }
 
     public ArrayList<Posicao> pesquisa(char[] palavra){
-        char[] k = this.padronizaChar(palavra); //**
+        char[] k = this.padronizaChar(palavra);
         return this.pesquisa(k, this.raiz);
     }
 

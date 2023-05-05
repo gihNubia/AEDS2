@@ -11,10 +11,6 @@ public class PalavraPos {
         this.col = col;
     }
 
-    public void Print(){
-        System.out.println(palavra + ": " + "(" + lin + ", " + col + ")");
-    }
-
     public String getPalavra() {
         return palavra;
     }

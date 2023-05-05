@@ -10,6 +10,6 @@ public class Posicao {
     }
 
     public String StringPosicao(){
-        return "( " + this.linha + ", " + this.coluna + " )";
+        return "(" + this.linha + ", " + this.coluna + ")";
     }
 }

@@ -12,39 +12,6 @@ import java.util.ArrayList;
  */
 
 public class Main {
-/*
-    public static ArvorePatricia preenchimento(String arq,String delim) throws Exception{
-        String palavra = null;
-        int i = 1;
-        int[] j = new int[2];
-
-        ArvorePatricia ap = new ArvorePatricia();
-
-        try{
-            ExtraiPalavra lista_palavras = new ExtraiPalavra(delim, arq);
-
-            while ((palavra = lista_palavras.proximaPalavra())!=null){
-                j = lista_palavras.posicoes(i-1);
-                System.out.println ("Palavra"+ (i++) +": " + palavra + " ("+ j[0] + " , " + j[1] + ")");
-
-                //adc obj palavra na arvore patricia, criando um obj_palavras
-                if(ap.pesquisa(palavra.toCharArray()) == null){
-                    ap.insere(palavra.toCharArray(), new Posicao(j[0], j[1]));
-                }
-                else{
-                    ap.pesquisa(palavra.toCharArray()).add(new Posicao(j[0], j[1]));
-                }
-
-            }
-            lista_palavras.fecharArquivos();
-        }
-        catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-
-        return ap;
-    }
- */
     public static void main(String[]args){
         //variaveis auxiliares
         int linha, coluna;
